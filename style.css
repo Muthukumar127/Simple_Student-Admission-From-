@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #401a5a, #335ca1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.form-box {
+    background: rgba(245, 244, 244, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+textarea {
+    resize: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #dd2476, #ff512f);
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+.mk{
+    color: black;
+}
